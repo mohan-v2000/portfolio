@@ -40,10 +40,9 @@
             </a>
             <div class="nav__links" id="navLinks">
                 <a href="#home" class="nav__link" data-section="home">Home</a>
-                <a href="#about" class="nav__link" data-section="about">About</a>
-                <a href="#expertise" class="nav__link" data-section="expertise">Expertise</a>
-                <a href="#projects" class="nav__link" data-section="projects">Projects</a>
+                <a href="#expertise" class="nav__link" data-section="expertise">Skills</a>
                 <a href="#experience" class="nav__link" data-section="experience">Experience</a>
+                <a href="#certifications" class="nav__link" data-section="certifications">Certifications</a>
                 <a href="#contact" class="nav__link nav__link--cta" data-section="contact">Get in Touch</a>
             </div>
             <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
@@ -53,16 +52,25 @@
         <!-- Mobile Menu -->
         <div class="nav__mobile" id="navMobile">
             <a href="#home" class="nav__mobile-link">Home</a>
-            <a href="#about" class="nav__mobile-link">About</a>
-            <a href="#expertise" class="nav__mobile-link">Expertise</a>
-            <a href="#projects" class="nav__mobile-link">Projects</a>
+            <a href="#expertise" class="nav__mobile-link">Skills</a>
             <a href="#experience" class="nav__mobile-link">Experience</a>
+            <a href="#certifications" class="nav__mobile-link">Certifications</a>
             <a href="#contact" class="nav__mobile-link">Get in Touch</a>
         </div>
     </nav>
 
     <!-- ===== HERO SECTION ===== -->
     <section class="hero" id="home">
+
+        <!-- Floating Tech Badges — scattered across full hero -->
+        <div class="floating-badge floating-badge--1"><i class="fab fa-java"></i> Java</div>
+        <div class="floating-badge floating-badge--2">☁️ GCP Cloud</div>
+        <div class="floating-badge floating-badge--3"><i class="fas fa-leaf"></i> Spring Boot</div>
+        <div class="floating-badge floating-badge--4"><i class="fas fa-cubes"></i> Microservices</div>
+        <!-- <div class="floating-badge floating-badge--5">🐳 Docker</div> -->
+        <div class="floating-badge floating-badge--5"><i class="fas fa-database"></i> PostgreSQL</div>
+        <div class="floating-badge floating-badge--6"><i class="fab fa-react"></i> React.js</div>
+
         <div class="hero__container">
             <div class="hero__content">
                 <div class="hero__badge animate-on-scroll">
@@ -73,7 +81,7 @@
                 <h1 class="hero__title animate-on-scroll">
                     <span class="hero__greeting">Hello, I'm</span>
                     <span class="hero__name">
-                        <span class="hero__name-text" id="heroName">Mohana Sundaram K</span>
+                        <span class="hero__name-text" id="heroName">Mohanasundaram K</span>
                     </span>
                     <span class="hero__role">
                         <span class="hero__role-static">I build </span>
@@ -83,21 +91,48 @@
                 </h1>
 
                 <p class="hero__subtitle animate-on-scroll">
-                    <strong>Java Full Stack Developer</strong> with 3.5+ years of experience 
-                    architecting <span class="text-highlight">scalable microservices</span> and 
-                    <span class="text-highlight">high-throughput cloud infrastructures</span> for enterprise platforms 
-                    at <span class="client-tag">Rappit</span> and <span class="client-tag">Quinbay</span>.
+                    <strong>Java Full Stack Developer</strong> with 3.5+ years of experience building
+                    <span class="text-highlight">scalable enterprise applications</span> using
+                    Java, Spring Boot, and Microservices. Proficient in designing
+                    <span class="text-highlight">RESTful APIs</span>, optimizing SQL databases,
+                    building UIs with React.js, and developing
+                    <span class="text-highlight">cloud-native solutions on GCP</span> —
+                    <!-- serving <span class="client-tag">900+ retail stores</span> at <span class="client-tag">Rappit</span>
+                    and <span class="client-tag">150+ B2B sellers</span> at <span class="client-tag">Quinbay</span>. -->
+                    serving <span class="client-tag">900+ retail stores</span> on an enterprise retail app
+                    and <span class="client-tag">150+ B2B sellers</span> on an e-commerce app.
+                    <span class="hero__cert-inline"><i class="fab fa-google"></i> Google Cloud Certified Engineer.</span>
                 </p>
 
+                <!-- Domain Chips -->
+                <!-- <div class="hero__domains animate-on-scroll">
+                    <div class="hero__domain">
+                        <i class="fas fa-server"></i>
+                        <span>Java Backend Engineering</span>
+                    </div>
+                    <div class="hero__domain">
+                        <i class="fab fa-google"></i>
+                        <span>GCP Cloud Native</span>
+                    </div>
+                    <div class="hero__domain">
+                        <i class="fab fa-react"></i>
+                        <span>React.js Full Stack</span>
+                    </div>
+                    <div class="hero__domain">
+                        <i class="fas fa-database"></i>
+                        <span>Database Optimization</span>
+                    </div>
+                </div> -->
+
                 <div class="hero__actions animate-on-scroll">
-                    <a href="#projects" class="btn btn--primary" id="cta-projects">
+                    <a href="#experience" class="btn btn--primary" id="cta-experience">
                         <i class="fas fa-rocket"></i>
                         View My Work
                     </a>
-                    <a href="#contact" class="btn btn--outline" id="cta-contact">
+                    <!-- <a href="#contact" class="btn btn--outline" id="cta-contact">
                         <i class="fas fa-envelope"></i>
                         Contact Me
-                    </a>
+                    </a> -->
                     <a href="Mohanasundaram K - Resume - June 2026 (1).pdf" class="btn btn--ghost" id="cta-resume" download="Mohanasundaram_K_Resume.pdf">
                         <i class="fas fa-download"></i>
                         Resume
@@ -105,53 +140,19 @@
                 </div>
 
                 <div class="hero__socials animate-on-scroll">
-                    <a href="https://github.com/Vinoth-Mohan" class="social-icon" aria-label="GitHub" id="social-github" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-github"></i>
-                    </a>
                     <a href="https://www.linkedin.com/in/mohanasundaram-k-7ms5v3/" class="social-icon" aria-label="LinkedIn" id="social-linkedin" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                     <a href="mailto:mohanasundaram.k53@gmail.com" class="social-icon" aria-label="Email" id="social-email">
                         <i class="fas fa-envelope"></i>
                     </a>
+                    <a href="https://wa.me/919629482743" class="social-icon" aria-label="WhatsApp" id="social-whatsapp" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <!-- <a href="https://github.com/mohan-v2000" class="social-icon" aria-label="GitHub" id="social-github" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a> -->
                 </div>
-            </div>
-
-            <!-- Hero Visual: Animated Code Terminal -->
-            <div class="hero__visual animate-on-scroll">
-                <div class="hero__terminal">
-                    <div class="terminal__header">
-                        <div class="terminal__dots">
-                            <span class="terminal__dot terminal__dot--red"></span>
-                            <span class="terminal__dot terminal__dot--yellow"></span>
-                            <span class="terminal__dot terminal__dot--green"></span>
-                        </div>
-                        <span class="terminal__title">StoreConfigService.java</span>
-                    </div>
-                    <pre class="terminal__body"><code><span class="token-keyword">import</span> <span class="token-module">org.springframework.stereotype.Service</span>;
-<span class="token-keyword">import</span> <span class="token-module">com.google.cloud.tasks.v2.*</span>;
-
-<span class="token-comment">// High-throughput enterprise service</span>
-<span class="token-keyword">@Service</span>
-<span class="token-keyword">public class</span> <span class="token-class">StoreConfigService</span> {
-    <span class="token-keyword">private final</span> CloudTasksClient <span class="token-variable">tasksClient</span>;
-
-    <span class="token-keyword">public</span> <span class="token-type">void</span> <span class="token-function">syncOperatingHours</span>(<span class="token-type">StoreData</span> data) {
-        <span class="token-comment">// 10x capacity boost via GCP Cloud Tasks</span>
-        Task task = Task.newBuilder()
-            .setHttpRequest(HttpRequest.newBuilder()
-                .setUrl(<span class="token-string">"/api/sync"</span>)
-                .build())
-            .build();
-        tasksClient.createTask(queuePath, task);
-    }<span class="terminal__cursor">█</span></code></pre>
-                </div>
-
-                <!-- Floating Tech Badges around terminal -->
-                <div class="floating-badge floating-badge--1">🍃 Spring Boot</div>
-                <div class="floating-badge floating-badge--2">☁️ GCP Tasks</div>
-                <div class="floating-badge floating-badge--3">🐳 Docker</div>
-                <div class="floating-badge floating-badge--4">⚙️ Microservices</div>
             </div>
         </div>
 
@@ -164,222 +165,122 @@
         </div>
     </section>
 
-    <!-- ===== ABOUT SECTION ===== -->
-    <section class="about" id="about">
-        <div class="section__container">
-            <div class="section__header animate-on-scroll">
-                <span class="section__label">// ABOUT_ME</span>
-                <h2 class="section__title">Who I <span class="text-gradient">Am</span></h2>
-                <div class="section__line"></div>
-            </div>
-
-            <div class="about__content">
-                <div class="about__text animate-on-scroll">
-                    <p class="about__intro">
-                        I'm a <span class="text-gradient-inline">Java Full Stack Developer</span> passionate about building 
-                        backend systems that don't just work — they <em>scale</em>, <em>perform</em>, and <em>endure</em>.
-                    </p>
-                    <p>
-                        My work spans from designing resilient microservices with Spring Boot and Google Cloud Platform, 
-                        to building high-throughput data sync modules processing hundreds of thousands of records. I've delivered 
-                        production-grade enterprise solutions, achieving measurable performance boosts and seamless cloud migrations.
-                    </p>
-                    <p>
-                        When I'm not architecting APIs, I'm optimizing complex SQL queries, building CI/CD pipelines, 
-                        or exploring the frontier of scalable system architecture.
-                    </p>
-
-                    <div class="about__stats">
-                        <div class="stat-card">
-                            <span class="stat-card__number" data-target="3">0</span>
-                            <span class="stat-card__suffix">.5+</span>
-                            <span class="stat-card__label">Years Experience</span>
-                        </div>
-                        <div class="stat-card">
-                            <span class="stat-card__number" data-target="900">0</span>
-                            <span class="stat-card__suffix">+</span>
-                            <span class="stat-card__label">Stores Configured</span>
-                        </div>
-                        <div class="stat-card">
-                            <span class="stat-card__number" data-target="100">0</span>
-                            <span class="stat-card__suffix">K+</span>
-                            <span class="stat-card__label">Records Processed</span>
-                        </div>
-                        <div class="stat-card">
-                            <span class="stat-card__number" data-target="40">0</span>
-                            <span class="stat-card__suffix">%</span>
-                            <span class="stat-card__label">Counterfeit Drop</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="about__skills-overview animate-on-scroll">
-                    <div class="skills-ring-container">
-                        <div class="skill-ring" data-percentage="95" data-label="Java">
-                            <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="54" class="skill-ring__bg"/><circle cx="60" cy="60" r="54" class="skill-ring__fill" style="--percentage: 95"/></svg>
-                            <div class="skill-ring__content"><span class="skill-ring__value">95%</span><span class="skill-ring__label">Java</span></div>
-                        </div>
-                        <div class="skill-ring" data-percentage="90" data-label="Spring Boot">
-                            <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="54" class="skill-ring__bg"/><circle cx="60" cy="60" r="54" class="skill-ring__fill" style="--percentage: 90"/></svg>
-                            <div class="skill-ring__content"><span class="skill-ring__value">90%</span><span class="skill-ring__label">Spring Boot</span></div>
-                        </div>
-                        <div class="skill-ring" data-percentage="85" data-label="GCP Cloud">
-                            <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="54" class="skill-ring__bg"/><circle cx="60" cy="60" r="54" class="skill-ring__fill" style="--percentage: 85"/></svg>
-                            <div class="skill-ring__content"><span class="skill-ring__value">85%</span><span class="skill-ring__label">GCP Cloud</span></div>
-                        </div>
-                        <div class="skill-ring" data-percentage="85" data-label="System Design">
-                            <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="54" class="skill-ring__bg"/><circle cx="60" cy="60" r="54" class="skill-ring__fill" style="--percentage: 85"/></svg>
-                            <div class="skill-ring__content"><span class="skill-ring__value">85%</span><span class="skill-ring__label">System Design</span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- ===== EXPERTISE SECTION ===== -->
     <section class="expertise" id="expertise">
         <div class="section__container">
             <div class="section__header animate-on-scroll">
-                <span class="section__label">// CORE_EXPERTISE</span>
-                <h2 class="section__title">What I <span class="text-gradient">Engineer</span></h2>
+                <span class="section__label">// SKILLS</span>
+                <h2 class="section__title">My Technical <span class="text-gradient">Skills</span></h2>
                 <div class="section__line"></div>
-                <p class="section__subtitle">Production systems, not proofs of concept.</p>
+                <p class="section__subtitle">Technologies I work with every day.</p>
             </div>
 
             <div class="expertise__grid">
-                <!-- Enterprise Backend -->
+
+                <!-- Java Backend Engineering -->
                 <div class="expertise__card animate-on-scroll" id="expertise-backend">
                     <div class="card-glow"></div>
                     <div class="expertise__icon">
                         <i class="fas fa-server"></i>
                     </div>
-                    <h3 class="expertise__card-title">Enterprise Backend</h3>
+                    <h3 class="expertise__card-title">Java Backend Engineering</h3>
                     <p class="expertise__card-desc">
-                        High-performance REST APIs and microservices architecture using Java and Spring Boot.
-                        Battle-tested systems processing millions of records.
+                        Building high-performance REST APIs and enterprise services with the full Spring ecosystem —
+                        from store configuration engines to document management systems.
                     </p>
                     <div class="expertise__tags">
-                        <span class="tag">Java 17</span>
+                        <span class="tag">Java</span>
                         <span class="tag">Spring Boot</span>
-                        <span class="tag">J2EE</span>
-                        <span class="tag">Hibernate</span>
+                        <span class="tag">Spring MVC</span>
+                        <span class="tag">Spring Security</span>
+                        <span class="tag">Hibernate / JPA</span>
+                        <span class="tag">Multithreading</span>
+                        <span class="tag">Maven</span>
                     </div>
-                    <div class="expertise__code-snippet">
-                        <code>
-<span class="token-decorator">@RestController</span>
-<span class="token-keyword">public class</span> <span class="token-class">ConfigController</span> {
-    <span class="token-decorator">@PostMapping</span>(<span class="token-string">"/sync"</span>)
-    <span class="token-keyword">public</span> ResponseEntity&lt;?&gt; sync() {
-        <span class="token-keyword">return</span> service.executeSync();
-    }
-}
-                        </code>
+                    <div class="expertise__achievement">
+                        <i class="fas fa-bolt"></i>
+                        <span>Designed operating hours configuration service ensuring accurate schedules across <strong>900+ retail stores</strong> and all downstream systems.</span>
                     </div>
                 </div>
 
-                <!-- Cloud Infrastructure -->
+                <!-- Cloud & GCP Infrastructure -->
                 <div class="expertise__card animate-on-scroll" id="expertise-cloud">
                     <div class="card-glow"></div>
                     <div class="expertise__icon">
                         <i class="fas fa-cloud"></i>
                     </div>
-                    <h3 class="expertise__card-title">Cloud Infrastructure</h3>
+                    <h3 class="expertise__card-title">Cloud &amp; GCP Infrastructure</h3>
                     <p class="expertise__card-desc">
-                        Scalable cloud-native architectures deployed on Google Cloud Platform.
-                        Optimizing costs and boosting capacity for high-demand applications.
+                        Designing scalable cloud-native solutions on Google Cloud Platform — async task orchestration,
+                        service migrations, and enterprise identity integration with Azure AD.
                     </p>
                     <div class="expertise__tags">
-                        <span class="tag">GCP App Engine</span>
-                        <span class="tag">Cloud Run</span>
+                        <span class="tag">GCP Cloud Run</span>
                         <span class="tag">Cloud Tasks</span>
+                        <span class="tag">App Engine</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Kubernetes</span>
                         <span class="tag">Azure AD</span>
+                        <span class="tag">CI/CD</span>
                     </div>
-                    <div class="expertise__metrics">
-                        <div class="metric">
-                            <span class="metric__value">10x</span>
-                            <span class="metric__label">Capacity Boost</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric__value">15%</span>
-                            <span class="metric__label">Cost Reduction</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric__value">99.9%</span>
-                            <span class="metric__label">Uptime SLA</span>
-                        </div>
+                    <div class="expertise__achievement">
+                        <i class="fas fa-bolt"></i>
+                        <span>Boosted sync capacity <strong>10×</strong> via Cloud Tasks delta-based async queuing · cut infrastructure costs <strong>15%</strong> by migrating App Engine → Cloud Run.</span>
                     </div>
                 </div>
 
-                <!-- Data Engineering -->
+                <!-- Database Engineering -->
                 <div class="expertise__card animate-on-scroll" id="expertise-data">
                     <div class="card-glow"></div>
                     <div class="expertise__icon">
                         <i class="fas fa-database"></i>
                     </div>
-                    <h3 class="expertise__card-title">Data Engineering</h3>
+                    <h3 class="expertise__card-title">Database Engineering</h3>
                     <p class="expertise__card-desc">
-                        Advanced SQL query optimization and bulk data processing.
-                        Handling 100,000+ records for real-time reporting and enterprise analytics.
+                        Optimizing complex SQL queries, designing efficient schemas, and integrating NoSQL
+                        stores for high-speed search and distributed caching in enterprise workloads.
                     </p>
                     <div class="expertise__tags">
-                        <span class="tag">PostgreSQL</span>
                         <span class="tag">MySQL</span>
-                        <span class="tag">Elasticsearch</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">MongoDB</span>
                         <span class="tag">Redis</span>
+                        <span class="tag">Elasticsearch</span>
+                        <span class="tag">Spring Data</span>
+                        <span class="tag">JPA</span>
                     </div>
-                    <div class="expertise__pipeline">
-                        <div class="pipeline__step">
-                            <span class="pipeline__icon">📥</span>
-                            <span>Extract</span>
-                        </div>
-                        <div class="pipeline__connector"></div>
-                        <div class="pipeline__step">
-                            <span class="pipeline__icon">⚡</span>
-                            <span>Process</span>
-                        </div>
-                        <div class="pipeline__connector"></div>
-                        <div class="pipeline__step">
-                            <span class="pipeline__icon">🗄️</span>
-                            <span>Store</span>
-                        </div>
-                        <div class="pipeline__connector"></div>
-                        <div class="pipeline__step">
-                            <span class="pipeline__icon">📊</span>
-                            <span>Report</span>
-                        </div>
+                    <div class="expertise__achievement">
+                        <i class="fas fa-bolt"></i>
+                        <span>Improved document fetch performance by <strong>30%</strong> via hierarchical SQL optimization · stable bulk processing for <strong>100K+ records</strong> with no latency regression.</span>
                     </div>
                 </div>
 
-                <!-- Microservices & DevOps -->
-                <div class="expertise__card animate-on-scroll" id="expertise-devops">
+                <!-- Full Stack & Event-Driven -->
+                <div class="expertise__card animate-on-scroll" id="expertise-fullstack">
                     <div class="card-glow"></div>
                     <div class="expertise__icon">
-                        <i class="fas fa-network-wired"></i>
+                        <i class="fas fa-layer-group"></i>
                     </div>
-                    <h3 class="expertise__card-title">Microservices & DevOps</h3>
+                    <h3 class="expertise__card-title">Full Stack &amp; Event-Driven</h3>
                     <p class="expertise__card-desc">
-                        Containerized deployments and distributed event streaming.
-                        Building resilient systems that tolerate failure and scale effortlessly.
+                        Delivering end-to-end features with React.js frontends, Spring Boot APIs, and
+                        Kafka-powered event streams — across B2B e-commerce and enterprise platforms.
                     </p>
                     <div class="expertise__tags">
-                        <span class="tag">Docker</span>
-                        <span class="tag">Kubernetes</span>
+                        <span class="tag">React.js</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML / CSS</span>
                         <span class="tag">Kafka</span>
-                        <span class="tag">CI/CD</span>
+                        <span class="tag">Microservices</span>
+                        <span class="tag">REST APIs</span>
+                        <span class="tag">Git / Agile</span>
                     </div>
-                    <div class="expertise__flow">
-                        <div class="flow__node flow__node--start">Commit</div>
-                        <div class="flow__arrow"><i class="fas fa-arrow-right"></i></div>
-                        <div class="flow__node flow__node--agent">Build</div>
-                        <div class="flow__arrow"><i class="fas fa-arrow-right"></i></div>
-                        <div class="flow__node flow__node--decision">Test</div>
-                        <div class="flow__arrow"><i class="fas fa-arrow-right"></i></div>
-                        <div class="flow__node flow__node--agent">Containerize</div>
-                        <div class="flow__arrow"><i class="fas fa-arrow-right"></i></div>
-                        <div class="flow__node flow__node--end">Deploy</div>
+                    <div class="expertise__achievement">
+                        <i class="fas fa-bolt"></i>
+                        <span>Built full-stack B2B product features enabling <strong>150+ sellers</strong> · reduced false keyword rejections by <strong>30%</strong> via AI-integrated detection pipeline.</span>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -390,403 +291,37 @@
             <div class="marquee-content">
                 <span class="marquee-item"><i class="fab fa-java"></i> Java</span>
                 <span class="marquee-item"><i class="fas fa-leaf"></i> Spring Boot</span>
-                <span class="marquee-item"><i class="fas fa-server"></i> Microservices</span>
-                <span class="marquee-item"><i class="fab fa-google"></i> GCP</span>
                 <span class="marquee-item"><i class="fab fa-react"></i> React.js</span>
-                <span class="marquee-item"><i class="fas fa-cubes"></i> Kubernetes</span>
+                <span class="marquee-item"><i class="fab fa-google"></i> GCP</span>
+                <span class="marquee-item"><i class="fas fa-server"></i> Microservices</span>
                 <span class="marquee-item"><i class="fab fa-docker"></i> Docker</span>
-                <span class="marquee-item"><i class="fas fa-stream"></i> Kafka</span>
                 <span class="marquee-item"><i class="fas fa-database"></i> PostgreSQL</span>
+                <span class="marquee-item"><i class="fas fa-stream"></i> Kafka</span>
+                <span class="marquee-item"><i class="fas fa-cubes"></i> Kubernetes</span>
                 <span class="marquee-item"><i class="fas fa-search"></i> Elasticsearch</span>
+                <span class="marquee-item"><i class="fas fa-lock"></i> Spring Security</span>
+                <span class="marquee-item"><i class="fas fa-database"></i> MongoDB</span>
+                <span class="marquee-item"><i class="fas fa-bolt"></i> Redis</span>
+                <span class="marquee-item"><i class="fab fa-python"></i> Python</span>
+                <span class="marquee-item"><i class="fas fa-code-branch"></i> CI/CD</span>
+                <span class="marquee-item"><i class="fab fa-microsoft"></i> Azure AD</span>
                 <!-- Duplicate for seamless loop -->
                 <span class="marquee-item"><i class="fab fa-java"></i> Java</span>
                 <span class="marquee-item"><i class="fas fa-leaf"></i> Spring Boot</span>
-                <span class="marquee-item"><i class="fas fa-server"></i> Microservices</span>
-                <span class="marquee-item"><i class="fab fa-google"></i> GCP</span>
                 <span class="marquee-item"><i class="fab fa-react"></i> React.js</span>
-                <span class="marquee-item"><i class="fas fa-cubes"></i> Kubernetes</span>
+                <span class="marquee-item"><i class="fab fa-google"></i> GCP</span>
+                <span class="marquee-item"><i class="fas fa-server"></i> Microservices</span>
                 <span class="marquee-item"><i class="fab fa-docker"></i> Docker</span>
-                <span class="marquee-item"><i class="fas fa-stream"></i> Kafka</span>
                 <span class="marquee-item"><i class="fas fa-database"></i> PostgreSQL</span>
+                <span class="marquee-item"><i class="fas fa-stream"></i> Kafka</span>
+                <span class="marquee-item"><i class="fas fa-cubes"></i> Kubernetes</span>
                 <span class="marquee-item"><i class="fas fa-search"></i> Elasticsearch</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== PROJECTS SECTION ===== -->
-    <section class="projects" id="projects">
-        <div class="section__container">
-            <div class="section__header animate-on-scroll">
-                <span class="section__label">// FEATURED_PROJECTS</span>
-                <h2 class="section__title">Enterprise Systems <span class="text-gradient">in Action</span></h2>
-                <div class="section__line"></div>
-                <p class="section__subtitle">Not demos — these are production-grade systems solving real problems.</p>
-            </div>
-
-            <div class="projects__grid">
-                <!-- Multi-location Config -->
-                <article class="project__card animate-on-scroll" id="project-coder-buddy">
-                    <div class="project__card-shine"></div>
-                    <div class="project__number">01</div>
-                    <div class="project__header">
-                        <div class="project__type">
-                            <span class="project__type-dot project__type-dot--agentic"></span>
-                            Backend API · Java
-                        </div>
-                        <div class="project__links">
-                            <a href="https://github.com/Vinoth-Mohan" class="project__link-icon" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project__title">Store Configuration Service</h3>
-                    <p class="project__desc">
-                        A robust Spring Boot backend supporting multi-location selling capabilities,
-                        managing complex store operating hours and operational status overrides.
-                    </p>
-                    <div class="project__impact">
-                        <div class="project__impact-stat">
-                            <span class="project__impact-value">900+</span>
-                            <span class="project__impact-label">Stores Configured</span>
-                        </div>
-                    </div>
-                    <div class="project__architecture">
-                        <div class="arch__flow">
-                            <div class="arch__node arch__node--input">
-                                <span class="arch__node-icon">📱</span>
-                                <span>Client App</span>
-                            </div>
-                            <div class="arch__connector">
-                                <div class="arch__connector-line"></div>
-                                <div class="arch__connector-arrow">▼</div>
-                            </div>
-                            <div class="arch__node arch__node--process">
-                                <span class="arch__node-icon">🍃</span>
-                                <span>Spring Boot API</span>
-                            </div>
-                            <div class="arch__connector">
-                                <div class="arch__connector-line"></div>
-                                <div class="arch__connector-arrow">▼</div>
-                            </div>
-                            <div class="arch__agents">
-                                <div class="arch__agent">Auth Filter</div>
-                                <div class="arch__agent">Validation</div>
-                                <div class="arch__agent">Cache</div>
-                            </div>
-                            <div class="arch__connector">
-                                <div class="arch__connector-line"></div>
-                                <div class="arch__connector-arrow">▼</div>
-                            </div>
-                            <div class="arch__node arch__node--output">
-                                <span class="arch__node-icon">🗄️</span>
-                                <span>PostgreSQL DB</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project__tech">
-                        <span class="tag tag--sm">Spring Boot</span>
-                        <span class="tag tag--sm">Java</span>
-                        <span class="tag tag--sm">REST API</span>
-                        <span class="tag tag--sm">PostgreSQL</span>
-                    </div>
-                </article>
-
-                <!-- GCP Data Sync -->
-                <article class="project__card animate-on-scroll" id="project-event-planner">
-                    <div class="project__card-shine"></div>
-                    <div class="project__number">02</div>
-                    <div class="project__header">
-                        <div class="project__type">
-                            <span class="project__type-dot project__type-dot--autonomous"></span>
-                            Cloud · GCP Tasks
-                        </div>
-                        <div class="project__links">
-                            <a href="https://github.com/Vinoth-Mohan" class="project__link-icon" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project__title">Distributed Data Sync</h3>
-                    <p class="project__desc">
-                        A highly scalable data synchronization module leveraging GCP Cloud Tasks and Cloud Run
-                        to guarantee delivery and prevent message dropping.
-                    </p>
-                    <div class="project__impact">
-                        <div class="project__impact-stat">
-                            <span class="project__impact-value">10x</span>
-                            <span class="project__impact-label">Capacity Boost</span>
-                        </div>
-                    </div>
-                    <div class="project__agents-grid">
-                        <div class="project__agent-card">
-                            <span class="project__agent-icon">☁️</span>
-                            <span class="project__agent-name">Cloud Run</span>
-                            <span class="project__agent-status">● Scaled</span>
-                        </div>
-                        <div class="project__agent-card">
-                            <span class="project__agent-icon">📥</span>
-                            <span class="project__agent-name">Cloud Tasks</span>
-                            <span class="project__agent-status">● Queueing</span>
-                        </div>
-                        <div class="project__agent-card">
-                            <span class="project__agent-icon">🛡️</span>
-                            <span class="project__agent-name">Azure AD</span>
-                            <span class="project__agent-status">● Secured</span>
-                        </div>
-                    </div>
-                    <div class="project__tech">
-                        <span class="tag tag--sm">GCP</span>
-                        <span class="tag tag--sm">Cloud Tasks</span>
-                        <span class="tag tag--sm">Cloud Run</span>
-                        <span class="tag tag--sm">Azure AD</span>
-                    </div>
-                </article>
-
-                <!-- Enterprise DMS -->
-                <article class="project__card animate-on-scroll" id="project-resume-tailor">
-                    <div class="project__card-shine"></div>
-                    <div class="project__number">03</div>
-                    <div class="project__header">
-                        <div class="project__type">
-                            <span class="project__type-dot project__type-dot--fullstack"></span>
-                            Full-Stack · Enterprise
-                        </div>
-                        <div class="project__links">
-                            <a href="https://github.com/Vinoth-Mohan" class="project__link-icon" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project__title">Enterprise DMS</h3>
-                    <p class="project__desc">
-                        A robust Document Management System featuring bulk Excel report generation
-                        and document retrieval, serving over 100,000+ records seamlessly.
-                    </p>
-                    <div class="project__impact">
-                        <div class="project__impact-stat">
-                            <span class="project__impact-value">30%</span>
-                            <span class="project__impact-label">Fetch Performance Boost</span>
-                        </div>
-                    </div>
-                    <div class="project__stack-visual">
-                        <div class="stack__layer stack__layer--frontend">
-                            <span class="stack__layer-label">Frontend</span>
-                            <span class="stack__layer-tech">React UI</span>
-                        </div>
-                        <div class="stack__layer stack__layer--backend">
-                            <span class="stack__layer-label">Backend</span>
-                            <span class="stack__layer-tech">Spring Boot API</span>
-                        </div>
-                        <div class="stack__layer stack__layer--ai">
-                            <span class="stack__layer-label">Database</span>
-                            <span class="stack__layer-tech">PostgreSQL</span>
-                        </div>
-                    </div>
-                    <div class="project__tech">
-                        <span class="tag tag--sm">Spring Boot</span>
-                        <span class="tag tag--sm">React</span>
-                        <span class="tag tag--sm">Apache POI</span>
-                        <span class="tag tag--sm">SQL</span>
-                    </div>
-                </article>
-
-                <!-- Brand Authorization (Featured) -->
-                <article class="project__card project__card--featured animate-on-scroll" id="project-insights">
-                    <div class="project__card-shine"></div>
-                    <div class="project__number">04</div>
-                    <div class="project__header">
-                        <div class="project__type">
-                            <span class="project__type-dot project__type-dot--enterprise"></span>
-                            Enterprise · E-commerce
-                        </div>
-                        <span class="project__badge">Enterprise</span>
-                    </div>
-                    <h3 class="project__title">Brand Authorization Platform</h3>
-                    <p class="project__desc">
-                        A robust B2B backend platform ensuring brand authenticity across e-commerce listings,
-                        utilizing AI-based restricted keyword detection to flag counterfeit products automatically.
-                    </p>
-                    <div class="project__impact project__impact--multi">
-                        <div class="project__impact-stat">
-                            <span class="project__impact-value">40%</span>
-                            <span class="project__impact-label">Counterfeit Drop</span>
-                        </div>
-                        <div class="project__impact-stat">
-                            <span class="project__impact-value">2M+</span>
-                            <span class="project__impact-label">Listings Scanned</span>
-                        </div>
-                    </div>
-                    <div class="project__enterprise-flow">
-                        <div class="ent__step">
-                            <div class="ent__step-header">01</div>
-                            <div class="ent__step-label">Product Ingestion</div>
-                        </div>
-                        <div class="ent__step-connector"></div>
-                        <div class="ent__step">
-                            <div class="ent__step-header">02</div>
-                            <div class="ent__step-label">Keyword Analysis</div>
-                        </div>
-                        <div class="ent__step-connector"></div>
-                        <div class="ent__step">
-                            <div class="ent__step-header">03</div>
-                            <div class="ent__step-label">Brand Verification</div>
-                        </div>
-                        <div class="ent__step-connector"></div>
-                        <div class="ent__step">
-                            <div class="ent__step-header">04</div>
-                            <div class="ent__step-label">Listing Action</div>
-                        </div>
-                    </div>
-                    <div class="project__tech">
-                        <span class="tag tag--sm">Java</span>
-                        <span class="tag tag--sm">Microservices</span>
-                        <span class="tag tag--sm">Elasticsearch</span>
-                        <span class="tag tag--sm">Production</span>
-                    </div>
-
-                    <!-- Deep Dive Toggle Button -->
-                    <button class="deepdive__toggle" id="deepdiveToggle" aria-expanded="false" aria-controls="deepdivePanel">
-                        <span class="deepdive__toggle-text">
-                            <i class="fas fa-microscope"></i>
-                            Deep Dive — Proof of Work
-                        </span>
-                        <span class="deepdive__toggle-arrow">
-                            <i class="fas fa-chevron-down"></i>
-                        </span>
-                    </button>
-
-                    <!-- Expandable Deep Dive Panel -->
-                    <div class="deepdive" id="deepdivePanel" aria-hidden="true">
-                        <div class="deepdive__inner">
-
-                            <!-- Meta Bar -->
-                            <div class="deepdive__meta">
-                                <div class="deepdive__meta-item">
-                                    <i class="fas fa-building"></i>
-                                    <span>Quinbay</span>
-                                </div>
-                                <div class="deepdive__meta-item">
-                                    <i class="fas fa-shopping-cart"></i>
-                                    <span>B2B E-commerce</span>
-                                </div>
-                                <div class="deepdive__meta-item">
-                                    <i class="fas fa-code"></i>
-                                    <span>Software Engineer</span>
-                                </div>
-                            </div>
-
-                            <!-- Metrics Bar -->
-                            <div class="deepdive__metrics">
-                                <div class="deepdive__metric">
-                                    <span class="deepdive__metric-value">-40%</span>
-                                    <span class="deepdive__metric-label">Counterfeit Listings</span>
-                                </div>
-                                <div class="deepdive__metric">
-                                    <span class="deepdive__metric-value">+30%</span>
-                                    <span class="deepdive__metric-label">Brand Sales</span>
-                                </div>
-                                <div class="deepdive__metric">
-                                    <span class="deepdive__metric-value">2M+</span>
-                                    <span class="deepdive__metric-label">Listings Scanned</span>
-                                </div>
-                                <div class="deepdive__metric">
-                                    <span class="deepdive__metric-value">99%</span>
-                                    <span class="deepdive__metric-label">Detection Accuracy</span>
-                                </div>
-                            </div>
-
-                            <!-- 4 Elements Grid -->
-                            <div class="deepdive__elements">
-                                <div class="deepdive__element">
-                                    <div class="deepdive__element-header">
-                                        <span class="deepdive__element-num">01</span>
-                                        <h4 class="deepdive__element-title">What was the problem?</h4>
-                                    </div>
-                                    <p class="deepdive__element-content">
-                                        The B2B e-commerce platform was struggling with a rising number of unauthorized and counterfeit product listings. This not only degraded the trust of major brands but also impacted the overall customer experience and compliance standards. A highly scalable, automated system was required to flag these listings before they went live.
-                                    </p>
-                                </div>
-                                <div class="deepdive__element">
-                                    <div class="deepdive__element-header">
-                                        <span class="deepdive__element-num">02</span>
-                                        <h4 class="deepdive__element-title">How did you approach it?</h4>
-                                    </div>
-                                    <p class="deepdive__element-content">
-                                        Instead of relying on manual moderators, I architected a Brand Authorization Platform using Java and Spring Boot microservices. To handle the high volume of daily listings efficiently, I utilized Elasticsearch for lightning-fast restricted keyword detection and built a rules engine that cross-references seller credentials with brand authorization registries.
-                                    </p>
-                                </div>
-                                <div class="deepdive__element">
-                                    <div class="deepdive__element-header">
-                                        <span class="deepdive__element-num">03</span>
-                                        <h4 class="deepdive__element-title">What did you actually do?</h4>
-                                    </div>
-                                    <p class="deepdive__element-content">
-                                        I implemented the core backend microservices responsible for digesting product feeds and passing them through the Elasticsearch keyword analyzer. If a restricted brand keyword was detected, the system invoked a verification service. I also designed the database schema in PostgreSQL to manage authorization statuses and built the REST APIs consumed by the seller dashboard.
-                                    </p>
-                                </div>
-                                <div class="deepdive__element">
-                                    <div class="deepdive__element-header">
-                                        <span class="deepdive__element-num">04</span>
-                                        <h4 class="deepdive__element-title">What was the result?</h4>
-                                    </div>
-                                    <p class="deepdive__element-content">
-                                        The Brand Authorization Platform successfully automated the moderation pipeline. By accurately detecting and blocking unauthorized products, we achieved a 40% drop in counterfeit listings. This restoration of trust directly correlated with a 30% increase in sales for genuine, authorized brand partners across the platform.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Architecture Flow -->
-                            <div class="deepdive__architecture">
-                                <h4 class="deepdive__architecture-title">
-                                    <i class="fas fa-network-wired"></i>
-                                    Automated Verification Pipeline
-                                </h4>
-                                <div class="deepdive__flow">
-                                    <div class="deepdive__flow-node">
-                                        <span class="deepdive__flow-icon">📥</span>
-                                        <span class="deepdive__flow-name">Product Feed</span>
-                                        <span class="deepdive__flow-tech">Ingestion API</span>
-                                    </div>
-                                    <div class="deepdive__flow-arrow">
-                                        <div class="deepdive__flow-arrow-line"></div>
-                                        <div class="deepdive__flow-arrow-tip">▶</div>
-                                    </div>
-                                    <div class="deepdive__flow-node deepdive__flow-node--accent">
-                                        <span class="deepdive__flow-icon">🔍</span>
-                                        <span class="deepdive__flow-name">Elasticsearch</span>
-                                        <span class="deepdive__flow-tech">Keyword Detection</span>
-                                    </div>
-                                    <div class="deepdive__flow-arrow">
-                                        <div class="deepdive__flow-arrow-line"></div>
-                                        <div class="deepdive__flow-arrow-tip">▶</div>
-                                    </div>
-                                    <div class="deepdive__flow-node">
-                                        <span class="deepdive__flow-icon">🛡️</span>
-                                        <span class="deepdive__flow-name">Spring Boot Auth</span>
-                                        <span class="deepdive__flow-tech">Rules Engine</span>
-                                    </div>
-                                    <div class="deepdive__flow-arrow">
-                                        <div class="deepdive__flow-arrow-line"></div>
-                                        <div class="deepdive__flow-arrow-tip">▶</div>
-                                    </div>
-                                    <div class="deepdive__flow-node">
-                                        <span class="deepdive__flow-icon">✅</span>
-                                        <span class="deepdive__flow-name">PostgreSQL</span>
-                                        <span class="deepdive__flow-tech">Listing Status</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Tech Stack -->
-                            <div class="deepdive__techstack">
-                                <span class="deepdive__techstack-title">Full Tech Stack:</span>
-                                <div class="deepdive__techstack-badges">
-                                    <span class="deepdive__tech-badge"><i class="fab fa-java"></i> Java 17</span>
-                                    <span class="deepdive__tech-badge"><i class="fas fa-leaf"></i> Spring Boot</span>
-                                    <span class="deepdive__tech-badge"><i class="fas fa-search"></i> Elasticsearch</span>
-                                    <span class="deepdive__tech-badge"><i class="fas fa-database"></i> PostgreSQL</span>
-                                    <span class="deepdive__tech-badge"><i class="fas fa-server"></i> Microservices</span>
-                                    <span class="deepdive__tech-badge"><i class="fas fa-exchange-alt"></i> REST APIs</span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </article>
+                <span class="marquee-item"><i class="fas fa-lock"></i> Spring Security</span>
+                <span class="marquee-item"><i class="fas fa-database"></i> MongoDB</span>
+                <span class="marquee-item"><i class="fas fa-bolt"></i> Redis</span>
+                <span class="marquee-item"><i class="fab fa-python"></i> Python</span>
+                <span class="marquee-item"><i class="fas fa-code-branch"></i> CI/CD</span>
+                <span class="marquee-item"><i class="fab fa-microsoft"></i> Azure AD</span>
             </div>
         </div>
     </section>
@@ -803,7 +338,7 @@
             <div class="timeline">
                 <div class="timeline__line"></div>
 
-                <!-- Rappit 2 -->
+                <!-- Rappit SE2 -->
                 <div class="timeline__item animate-on-scroll">
                     <div class="timeline__dot">
                         <div class="timeline__dot-inner"></div>
@@ -813,26 +348,27 @@
                             <span class="timeline__date">Jan 2025 — Present</span>
                             <span class="timeline__badge-current">Current</span>
                         </div>
-                        <h3 class="timeline__title">Software Engineer II</h3>
+                        <h3 class="timeline__title">Software Engineer 2</h3>
                         <p class="timeline__company">Rappit • Coimbatore, India</p>
                         <div class="timeline__desc">
                             <ul class="experience-list">
-                                <li>Designed and developed store operating hours configuration feature using Java and Spring Boot, enabling daily operating hours configuration, override hours for special dates, and pre-schedule changes to operating hours, ensuring accurate schedules across 900+ retail stores and downstream systems.</li>
-                                <li>Implemented a distribution list feature for calculating and allocating campaign resources across retail stores, replacing manual calculations and reducing allocation errors by 12%.</li>
-                                <li>Improved data synchronization module to handle large-scale bulk records by implementing delta-based filtering and asynchronous task processing via GCP Cloud Tasks, increasing sync capacity by 10×.</li>
+                                <li>Designed and developed store operating hours configuration feature using Java and Spring Boot, enabling daily operating hours configuration, override hours for special dates, and pre-schedule changes to operating hours, ensuring accurate schedules across <strong>900+ retail stores</strong> and downstream systems.</li>
+                                <li>Implemented a distribution list feature for calculating and allocating campaign resources across retail stores, replacing manual calculations and <strong>reducing allocation errors by 12%</strong>.</li>
+                                <li>Improved data synchronization module to handle large-scale bulk records by implementing delta-based filtering and asynchronous task processing via GCP Cloud Tasks, <strong>increasing sync capacity by 10×</strong>.</li>
                                 <li>Migrated authentication from Google SSO to Azure Active Directory by redesigning login flow and access controls, aligning with enterprise identity standards and centralizing identity management.</li>
                             </ul>
                         </div>
                         <div class="timeline__tags">
                             <span class="tag tag--sm">Java</span>
                             <span class="tag tag--sm">Spring Boot</span>
+                            <span class="tag tag--sm">GCP Cloud Tasks</span>
+                            <span class="tag tag--sm">Azure AD</span>
                             <span class="tag tag--sm">Microservices</span>
-                            <span class="tag tag--sm">GCP</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Rappit 1 -->
+                <!-- Rappit SE1 -->
                 <div class="timeline__item animate-on-scroll">
                     <div class="timeline__dot">
                         <div class="timeline__dot-inner"></div>
@@ -841,21 +377,22 @@
                         <div class="timeline__header">
                             <span class="timeline__date">Apr 2024 — Dec 2024</span>
                         </div>
-                        <h3 class="timeline__title">Software Engineer I</h3>
+                        <h3 class="timeline__title">Software Engineer 1</h3>
                         <p class="timeline__company">Rappit • Coimbatore, India</p>
                         <div class="timeline__desc">
                             <ul class="experience-list">
-                                <li>Developed features for an enterprise document management system using Spring Boot, including hierarchical folder management, user-to-user document sharing, and bulk data import, streamlining document handling and collaboration for business teams.</li>
-                                <li>Implemented efficient SQL queries in MySQL to handle hierarchical (tree-structured) folder data, improving document fetch performance by 30%.</li>
-                                <li>Developed an Excel report generation feature and optimized backend queries to reduce data retrieval latency, ensuring stable report processing for 100,000+ records.</li>
-                                <li>Modernized application infrastructure by migrating services within Google Cloud Platform (GCP) from App Engine to Cloud Run, reducing infrastructure costs by 15%.</li>
+                                <li>Developed features for an enterprise document management system using Spring Boot and React.js, including hierarchical folder management, user-to-user document sharing, and bulk data import, streamlining document handling and collaboration for business teams.</li>
+                                <li>Implemented efficient SQL queries in MySQL to handle hierarchical (tree-structured) folder data, <strong>improving document fetch performance by 30%</strong>.</li>
+                                <li>Developed an Excel report generation feature and optimized backend queries to reduce data retrieval latency, ensuring stable report processing for <strong>100,000+ records</strong>.</li>
+                                <li>Modernized application infrastructure by migrating services within Google Cloud Platform (GCP) from App Engine to Cloud Run, <strong>reducing infrastructure costs by 15%</strong>.</li>
                             </ul>
                         </div>
                         <div class="timeline__tags">
+                            <span class="tag tag--sm">Spring Boot</span>
+                            <span class="tag tag--sm">React.js</span>
+                            <span class="tag tag--sm">MySQL</span>
                             <span class="tag tag--sm">GCP Cloud Run</span>
-                            <span class="tag tag--sm">PostgreSQL</span>
                             <span class="tag tag--sm">Apache POI</span>
-                            <span class="tag tag--sm">Cloud Tasks</span>
                         </div>
                     </div>
                 </div>
@@ -873,104 +410,98 @@
                         <p class="timeline__company">Quinbay • Bangalore, India</p>
                         <div class="timeline__desc">
                             <ul class="experience-list">
-                                <li>Built B2B product management features using Java, Spring Boot, Microservices backed by PostgreSQL and MongoDB, enabling product operations for 150+ B2B sellers and expanding platform revenue channels.</li>
-                                <li>Implemented brand authorization validation to ensure product approvals only for verified sellers, reducing counterfeit and fake brand listings by 40%.</li>
-                                <li>Improved restricted keyword detection in product listings by integrating AI-based responses from the data science team, reducing false product rejections by 30% and improving seller onboarding experience.</li>
-                                <li>Developed a multi-location selling feature enabling sellers to fulfill orders from different areas, allowing customers to select the nearest fulfillment point and increasing seller profitability by 15%.</li>
+                                <li>Built B2B product management features using Core Java, Spring Boot, Microservices and React.js backed by PostgreSQL and MongoDB, enabling product operations for <strong>150+ B2B sellers</strong> and expanding platform revenue.</li>
+                                <li>Implemented brand authorization validation to ensure product approvals only for verified sellers, <strong>reducing counterfeit and fake brand listings by 40%</strong>.</li>
+                                <li>Improved restricted keyword detection in product listings by integrating AI-based responses from the data science team, <strong>reducing false product rejections by 30%</strong> and improving seller onboarding experience.</li>
+                                <li>Developed a multi-location selling feature enabling sellers to fulfill orders from different areas, allowing customers to select the nearest fulfillment point and <strong>increasing seller profitability by 15%</strong>.</li>
                             </ul>
                         </div>
                         <div class="timeline__tags">
-                            <span class="tag tag--sm">Elasticsearch</span>
                             <span class="tag tag--sm">Java</span>
-                            <span class="tag tag--sm">Kubernetes</span>
-                            <span class="tag tag--sm">B2B E-commerce</span>
+                            <span class="tag tag--sm">Spring Boot</span>
+                            <span class="tag tag--sm">React.js</span>
+                            <span class="tag tag--sm">PostgreSQL</span>
+                            <span class="tag tag--sm">MongoDB</span>
+                            <span class="tag tag--sm">Elasticsearch</span>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- ===== IMPACT METRICS ===== -->
-    <section class="impact" id="impact">
+    <!-- ===== CERTIFICATIONS SECTION ===== -->
+    <section class="certifications" id="certifications">
         <div class="section__container">
             <div class="section__header animate-on-scroll">
-                <span class="section__label">// PROFESSIONAL_IMPACT</span>
-                <h2 class="section__title">Measurable <span class="text-gradient">Results</span></h2>
+                <span class="section__label">// CERTIFICATIONS</span>
+                <h2 class="section__title">Professional <span class="text-gradient">Certifications</span></h2>
                 <div class="section__line"></div>
-                <p class="section__subtitle">Production metrics that speak louder than demo videos.</p>
+                <p class="section__subtitle">Validated expertise from recognised platforms and institutions.</p>
             </div>
 
-            <div class="impact__grid">
-                <div class="impact__card animate-on-scroll" id="impact-resolution">
-                    <div class="impact__card-inner">
-                        <div class="impact__icon"><i class="fas fa-arrow-up"></i></div>
-                        <div class="impact__number-container">
-                            <span class="impact__number" data-target="10">0</span>
-                            <span class="impact__symbol">x</span>
-                        </div>
-                        <h3 class="impact__label">Capacity Boost</h3>
-                        <p class="impact__desc">
-                            Scaled system capacity via GCP Cloud Tasks and Cloud Run, ensuring zero dropped messages.
-                        </p>
-                        <div class="impact__bar">
-                            <div class="impact__bar-fill" data-width="100"></div>
-                        </div>
+            <div class="cert__grid">
+
+                <!-- Google Cloud -->
+                <div class="cert__card animate-on-scroll">
+                    <div class="card-glow"></div>
+                    <div class="cert__icon cert__icon--google">
+                        <i class="fab fa-google"></i>
                     </div>
+                    <h3 class="cert__name">Google Cloud Certified</h3>
+                    <p class="cert__issuer">Associate Cloud Engineer · Google</p>
+                    <a href="https://www.credly.com/badges/df2c657b-e801-4b63-96d5-217c2d7a49c6/public_url" class="cert__link" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-external-link-alt"></i>
+                        View Certification
+                    </a>
                 </div>
 
-                <div class="impact__card animate-on-scroll" id="impact-latency">
-                    <div class="impact__card-inner">
-                        <div class="impact__icon"><i class="fas fa-shield-alt"></i></div>
-                        <div class="impact__number-container">
-                            <span class="impact__number" data-target="40">0</span>
-                            <span class="impact__symbol">%</span>
-                        </div>
-                        <h3 class="impact__label">Counterfeit Reduction</h3>
-                        <p class="impact__desc">
-                            Reduced unauthorized product listings through automated Elasticsearch keyword detection.
-                        </p>
-                        <div class="impact__bar">
-                            <div class="impact__bar-fill" data-width="40"></div>
-                        </div>
+                <!-- NPTEL DSA -->
+                <div class="cert__card animate-on-scroll">
+                    <div class="card-glow"></div>
+                    <div class="cert__icon cert__icon--nptel">
+                        <i class="fas fa-code"></i>
                     </div>
+                    <h3 class="cert__name">Programming, Data Structures &amp; Algorithms</h3>
+                    <p class="cert__issuer">NPTEL · IIT Madras</p>
+                    <a href="https://archive.nptel.ac.in/content/noc/NOC20/SEM1/Ecertificates/106/noc20-cs26/Assignment/Certificates/NPTEL20CS26S1PC100352.jpg" class="cert__link" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-external-link-alt"></i>
+                        View Certification
+                    </a>
                 </div>
 
-                <div class="impact__card animate-on-scroll" id="impact-tests">
-                    <div class="impact__card-inner">
-                        <div class="impact__icon"><i class="fas fa-database"></i></div>
-                        <div class="impact__number-container">
-                            <span class="impact__number" data-target="100">0</span>
-                            <span class="impact__symbol">K+</span>
-                        </div>
-                        <h3 class="impact__label">Records Processed Smoothly</h3>
-                        <p class="impact__desc">
-                            Supported bulk configurations and document retrievals for over 100,000 enterprise records.
-                        </p>
-                        <div class="impact__bar">
-                            <div class="impact__bar-fill" data-width="100"></div>
-                        </div>
+                <!-- NPTEL Python -->
+                <div class="cert__card animate-on-scroll">
+                    <div class="card-glow"></div>
+                    <div class="cert__icon cert__icon--nptel">
+                        <i class="fab fa-python"></i>
                     </div>
+                    <h3 class="cert__name">Computing using Python</h3>
+                    <p class="cert__issuer">NPTEL · IIT Madras</p>
+                    <a href="https://archive.nptel.ac.in/content/noc/NOC20/SEM2/Ecertificates/106/noc20-cs83/Course/NPTEL20CS83S61340620197383.jpg" class="cert__link" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-external-link-alt"></i>
+                        View Certification
+                    </a>
                 </div>
+
             </div>
 
-            <!-- Production Metrics Terminal -->
-            <div class="impact__terminal animate-on-scroll">
-                <div class="terminal__header">
-                    <div class="terminal__dots">
-                        <span class="terminal__dot terminal__dot--red"></span>
-                        <span class="terminal__dot terminal__dot--yellow"></span>
-                        <span class="terminal__dot terminal__dot--green"></span>
-                    </div>
-                    <span class="terminal__title">gcp_cloud_tasks.log</span>
+            <!-- Coding Profile -->
+            <div class="cert__profile animate-on-scroll">
+                <div class="cert__profile-icon">
+                    <i class="fas fa-code"></i>
                 </div>
-                <pre class="terminal__body terminal__body--log"><code><span class="log-timestamp">[2026-06-15 08:30:01]</span> <span class="log-level log-level--info">INFO</span>  Store config service: <span class="log-success">ALL SYSTEMS OPERATIONAL</span>
-<span class="log-timestamp">[2026-06-15 08:30:01]</span> <span class="log-level log-level--info">INFO</span>  Active microservices: <span class="log-number">8</span> | Syncs completed: <span class="log-number">104,291</span>
-<span class="log-timestamp">[2026-06-15 08:30:02]</span> <span class="log-level log-level--info">INFO</span>  Avg DB query latency: <span class="log-number">45ms</span> (P95: <span class="log-number">112ms</span>)
-<span class="log-timestamp">[2026-06-15 08:30:02]</span> <span class="log-level log-level--success">PASS</span>  Auth Filter: <span class="log-success">Azure AD token validated</span> ✓
-<span class="log-timestamp">[2026-06-15 08:30:03]</span> <span class="log-level log-level--info">INFO</span>  Capacity scaling metric: <span class="log-success">10x</span>
-<span class="log-timestamp">[2026-06-15 08:30:03]</span> <span class="log-level log-level--info">INFO</span>  Dropped messages detected: <span class="log-success">0</span></code></pre>
+                <div class="cert__profile-info">
+                    <span class="cert__profile-name">LeetCode</span>
+                    <span class="cert__profile-sub">Competitive Programming · Data Structures &amp; Algorithms Practice</span>
+                </div>
+                <a href="https://leetcode.com/u/Mohan537/" class="cert__link" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-external-link-alt"></i>
+                    View Profile
+                </a>
             </div>
+
         </div>
     </section>
 
@@ -981,7 +512,7 @@
                 <span class="section__label">// GET_IN_TOUCH</span>
                 <h2 class="section__title">Let's Build <span class="text-gradient">Together</span></h2>
                 <div class="section__line"></div>
-                <p class="section__subtitle">Looking to architect production AI systems? Let's talk.</p>
+                <p class="section__subtitle">Open to new opportunities — feel free to reach out.</p>
             </div>
 
             <div class="contact__content">
@@ -990,26 +521,26 @@
                         <div class="contact__card-icon"><i class="fas fa-envelope"></i></div>
                         <div>
                             <h3 class="contact__card-title">Email</h3>
-                            <a href="mailto:mohanasundaram.k53@gmail.com" class="contact__card-link">mohanasundaram.k53@gmail.com</a>
+                            <a href="https://mail.google.com/mail/?view=cm&to=mohanasundaram.k53@gmail.com" class="contact__card-link" target="_blank" rel="noopener noreferrer">mohanasundaram.k53@gmail.com</a>
                         </div>
                     </div>
                     <div class="contact__card" id="contact-card-linkedin">
                         <div class="contact__card-icon"><i class="fab fa-linkedin-in"></i></div>
                         <div>
                             <h3 class="contact__card-title">LinkedIn</h3>
-                            <a href="https://www.linkedin.com/in/mohanasundaram-k-7ms5v3/" class="contact__card-link" target="_blank" rel="noopener noreferrer">linkedin.com/in/mohanasundaram-k</a>
+                            <a href="https://www.linkedin.com/in/mohanasundaram-k-7ms5v3/" class="contact__card-link" target="_blank" rel="noopener noreferrer">/mohanasundaram-k</a>
                         </div>
                     </div>
-                    <div class="contact__card" id="contact-card-github">
-                        <div class="contact__card-icon"><i class="fab fa-github"></i></div>
+                    <div class="contact__card" id="contact-card-whatsapp">
+                        <div class="contact__card-icon"><i class="fab fa-whatsapp"></i></div>
                         <div>
-                            <h3 class="contact__card-title">GitHub</h3>
-                            <a href="https://github.com/Vinoth-Mohan" class="contact__card-link" target="_blank" rel="noopener noreferrer">https://github.com/Vinoth-Mohan</a>
+                            <h3 class="contact__card-title">WhatsApp</h3>
+                            <a href="https://wa.me/919629482743" class="contact__card-link" target="_blank" rel="noopener noreferrer">+91 9629482743</a>
                         </div>
                     </div>
                 </div>
 
-                <form class="contact__form animate-on-scroll" id="contactForm">
+                <!-- <form class="contact__form animate-on-scroll" id="contactForm">
                     <div class="form__group">
                         <label for="name" class="form__label">Name</label>
                         <input type="text" id="name" class="form__input" placeholder="Your name" required>
@@ -1026,7 +557,7 @@
                         <i class="fas fa-paper-plane"></i>
                         Send Message
                     </button>
-                </form>
+                </form> -->
             </div>
         </div>
     </section>
@@ -1040,19 +571,20 @@
                     <span class="nav__logo-name">Mohana Sundaram K</span>
                     <span class="nav__logo-bracket">/&gt;</span>
                 </a>
-                <div class="footer__socials">
+                <!-- <div class="footer__socials">
                     <a href="https://github.com/Vinoth-Mohan" class="social-icon social-icon--sm" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/mohanasundaram-k-7ms5v3/" class="social-icon social-icon--sm" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
                     <a href="mailto:mohanasundaram.k53@gmail.com" class="social-icon social-icon--sm"><i class="fas fa-envelope"></i></a>
-                </div>
+                </div> -->
             </div>
             <div class="footer__bottom">
-                <p class="footer__copy">&copy; 2026 Mohana Sundaram K. All rights reserved.</p>
+                <p class="footer__copy">&copy; 2026 Mohana Sundaram K.</p>
                 <p class="footer__built">Built with precision. Scaled with confidence.</p>
             </div>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

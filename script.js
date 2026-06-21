@@ -480,29 +480,59 @@ function initContactForm() {
     const form = document.getElementById('contactForm');
     if (!form) return;
 
-    form.addEventListener('submit', (e) => {
+    // ── EmailJS credentials ──────────────────────────────────────────────────
+    // 1. Sign up free at https://www.emailjs.com
+    // 2. Add a Gmail service → copy its Service ID below
+    // 3. Create an email template → copy its Template ID below
+    // 4. Go to Account → copy your Public Key below
+    const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';   // e.g. 'abc123XYZ'
+    const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';   // e.g. 'service_xxxxxx'
+    const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';  // e.g. 'template_xxxxxx'
+    // ────────────────────────────────────────────────────────────────────────
+
+    emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+
+    form.addEventListener('submit', async (e) => {
         e.preventDefault();
 
-        const button = form.querySelector('button[type="submit"]');
-        const originalText = button.innerHTML;
+        const button  = form.querySelector('button[type="submit"]');
+        const origHTML = button.innerHTML;
 
-        // Simulate submission
         button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-        button.disabled = true;
-        button.style.opacity = '0.7';
+        button.disabled  = true;
 
-        setTimeout(() => {
+        const params = {
+            from_name:  document.getElementById('name').value.trim(),
+            from_email: document.getElementById('email').value.trim(),
+            message:    document.getElementById('message').value.trim(),
+            to_name:    'Mohana Sundaram',
+        };
+
+        try {
+            await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, params);
+
             button.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
             button.style.background = 'linear-gradient(135deg, #10b981, #22c55e)';
-            button.style.opacity = '1';
+            form.reset();
 
             setTimeout(() => {
-                button.innerHTML = originalText;
+                button.innerHTML        = origHTML;
                 button.style.background = '';
-                button.disabled = false;
-                form.reset();
-            }, 2500);
-        }, 1500);
+                button.disabled         = false;
+            }, 4000);
+
+        } catch (err) {
+            console.error('EmailJS error:', err);
+
+            button.innerHTML = '<i class="fas fa-times"></i> Failed — Try Again';
+            button.style.background = 'linear-gradient(135deg, #f43f5e, #e11d48)';
+
+            setTimeout(() => {
+                button.innerHTML        = origHTML;
+                button.style.background = '';
+                button.disabled         = false;
+            }, 3500);
+        }
     });
 }
 
@@ -631,3 +661,19 @@ document.querySelectorAll('.project__card, .expertise__card').forEach(card => {
         card.style.transform = '';
     });
 });
+
+/* Email link — Ctrl/Cmd+click opens Gmail compose instead of a blank mailto tab */
+const emailLink = document.getElementById('social-email');
+if (emailLink) {
+    emailLink.addEventListener('click', (e) => {
+        if (e.ctrlKey || e.metaKey) {
+            e.preventDefault();
+            window.open(
+                'https://mail.google.com/mail/?view=cm&to=mohanasundaram.k53@gmail.com',
+                '_blank',
+                'noopener,noreferrer'
+            );
+        }
+    });
+}
+
